@@ -131,7 +131,8 @@
 
 ## Phase 3: Testing & Documentation
 
-- [-] 14. Write unit tests for all modules
+- [x] 14. Write unit tests for all modules
+
 
   - Write tests for ConfigManager (valid/invalid JSON, default config creation)
   - Write tests for Scanner (file discovery, filtering, extension extraction)
@@ -155,6 +156,7 @@
   - Document how to run the CLI cleaner with command examples
   - Document how to run the web interface with Flask server
   - Explain configuration file format with examples
+
   - Add scheduling instructions for Windows Task Scheduler
   - Add scheduling instructions for Unix/Linux cron
   - Include troubleshooting section for common issues
