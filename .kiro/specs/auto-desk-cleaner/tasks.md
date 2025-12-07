@@ -48,6 +48,7 @@
   - Implement operation logging with timestamp, source, destination, category, and status
   - Add error logging with file path and error details
 
+
   - Implement summary statistics tracking (total, moved, skipped, failed, categories)
   - Add persistent log file writing with append mode
   - Create summary display method showing all statistics
@@ -61,6 +62,7 @@
   - Add final summary display after processing completes
   - Ensure graceful termination on critical errors
   - Add command-line arguments for dry-run mode and custom config path
+
   - _Requirements: 4.3, 6.4_
 
 - [ ] 7. Checkpoint - Test core automation
