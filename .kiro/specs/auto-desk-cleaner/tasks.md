@@ -74,12 +74,15 @@
 - [ ] 8. Create Flask backend API
   - Set up Flask application structure in src/api/
 
+
   - Create REST API endpoint for scanning desktop (GET /api/scan)
   - Create endpoint for previewing categorization (POST /api/preview)
   - Create endpoint for executing cleanup (POST /api/cleanup)
   - Create endpoint for fetching operation logs (GET /api/logs)
   - Create endpoint for getting/updating configuration (GET/POST /api/config)
   - Add CORS support for local development
+
+
   - Integrate with existing backend modules (Scanner, Categorizer, Mover, Logger)
   - _Requirements: 1.1, 2.1, 3.1, 5.1_
 
@@ -89,6 +92,7 @@
   - Add configuration panel for editing categories and settings
   - Create responsive layout using CSS Grid/Flexbox
   - Add loading states and progress indicators
+
   - _Requirements: 7.1_
 
 - [ ] 10. Implement frontend JavaScript functionality
