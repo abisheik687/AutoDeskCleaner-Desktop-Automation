@@ -131,7 +131,8 @@
 
 ## Phase 3: Testing & Documentation
 
-- [ ] 14. Write unit tests for all modules
+- [-] 14. Write unit tests for all modules
+
   - Write tests for ConfigManager (valid/invalid JSON, default config creation)
   - Write tests for Scanner (file discovery, filtering, extension extraction)
   - Write tests for Categorizer (extension matching, default category)
