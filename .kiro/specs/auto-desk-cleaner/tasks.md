@@ -63,6 +63,7 @@
   - Ensure graceful termination on critical errors
   - Add command-line arguments for dry-run mode and custom config path
 
+
   - _Requirements: 4.3, 6.4_
 
 - [ ] 7. Checkpoint - Test core automation
@@ -72,6 +73,7 @@
 
 - [ ] 8. Create Flask backend API
   - Set up Flask application structure in src/api/
+
   - Create REST API endpoint for scanning desktop (GET /api/scan)
   - Create endpoint for previewing categorization (POST /api/preview)
   - Create endpoint for executing cleanup (POST /api/cleanup)
