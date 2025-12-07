@@ -21,12 +21,16 @@
   - Add filtering logic to exclude hidden files (files starting with dot)
   - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5_
 
-- [ ] 3. Implement file categorizer module
+- [x] 3. Implement file categorizer module
+
+
   - Create Categorizer class that accepts category configuration
   - Implement extension matching logic against configuration categories
   - Add default "Others" category assignment for unmatched extensions
   - Ensure case-insensitive extension matching
   - _Requirements: 2.1, 2.2, 2.3, 2.4_
+
+
 
 - [ ] 4. Implement file mover module
   - Create Mover class with file transfer capabilities
@@ -34,6 +38,8 @@
   - Add duplicate file detection and timestamp-based renaming
   - Implement file move operation with source removal
   - Add error handling for permission errors, locked files, and disk space issues
+
+
   - Ensure errors on individual files don't stop processing of remaining files
   - _Requirements: 3.1, 3.2, 3.3, 3.5, 6.1, 6.2, 6.3_
 
@@ -41,6 +47,7 @@
   - Create Logger class to track all operations
   - Implement operation logging with timestamp, source, destination, category, and status
   - Add error logging with file path and error details
+
   - Implement summary statistics tracking (total, moved, skipped, failed, categories)
   - Add persistent log file writing with append mode
   - Create summary display method showing all statistics
