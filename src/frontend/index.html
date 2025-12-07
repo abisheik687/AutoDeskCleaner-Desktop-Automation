@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDeskCleaner - Desktop File Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🗂️ AutoDeskCleaner</h1>
+            <p class="subtitle">Automated Desktop File Organization</p>
+        </header>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <button id="scanBtn" class="btn btn-primary">
+                <span class="icon">🔍</span> Scan Desktop
+            </button>
+            <button id="cleanupBtn" class="btn btn-success" disabled>
+                <span class="icon">✨</span> Clean Up Now
+            </button>
+            <button id="configBtn" class="btn btn-secondary">
+                <span class="icon">⚙️</span> Configuration
+            </button>
+            <button id="logsBtn" class="btn btn-secondary">
+                <span class="icon">📋</span> View Logs
+            </button>
+        </div>
+
+        <!-- Statistics Dashboard -->
+        <div id="statsPanel" class="stats-panel hidden">
+            <h2>📊 Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="totalFiles">0</div>
+                    <div class="stat-label">Total Files</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="movedFiles">0</div>
+                    <div class="stat-label">Moved</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="failedFiles">0</div>
+                    <div class="stat-label">Failed</div>
+                </div>
+            </div>
+            <div id="categoryStats" class="category-stats"></div>
+        </div>
+
+        <!-- File Preview -->
+        <div id="filePreview" class="file-preview hidden">
+            <h2>📁 Files Found</h2>
+            <div id="fileList" class="file-list"></div>
+        </div>
+
+        <!-- Configuration Panel -->
+        <div id="configPanel" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>⚙️ Configuration</h2>
+                    <button class="close-btn" onclick="closeConfig()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="configEditor" rows="20"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" onclick="closeConfig()">Cancel</button>
+                    <button class="btn btn-primary" onclick="saveConfig()">Save Configuration</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logs Panel -->
+        <div id="logsPanel" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>📋 Operation Logs</h2>
+                    <button class="close-btn" onclick="closeLogs()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <pre id="logsContent"></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" onclick="closeLogs()">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div id="loadingOverlay" class="loading-overlay hidden">
+            <div class="spinner"></div>
+            <p id="loadingText">Processing...</p>
+        </div>
+
+        <!-- Toast Notifications -->
+        <div id="toastContainer" class="toast-container"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
